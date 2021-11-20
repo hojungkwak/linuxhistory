@@ -3,7 +3,7 @@
 void func1(int* p);
 void func2(int** p);
 void func3(int*** p);
-void func4(int**** p);
+void func5(int**** p);
 
 int main() {
 	int i = 100;
@@ -23,7 +23,7 @@ int main() {
 	func3(&dp);
 	printf("**dp = %d\n", **dp);
 
-	func4(&tp);
+	func5(&tp);
 	printf("***tp = %d\n", ***tp);
 
 	printf("i = %d\n", i);
@@ -47,7 +47,7 @@ void func3(int*** p)
 	***p = ***p+100;
 }
 
-void func4(int**** p)
+void func5(int**** p)
 {
 	****p = ****p+100;
 }
